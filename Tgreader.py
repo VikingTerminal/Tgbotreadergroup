@@ -3,7 +3,7 @@ import time
 from colorama import Fore, Style
 
 def chiedi_api_key():
-    return input(f"{Fore.GREEN}Inserisci il token API del tuo bot Telegram e imposta il bot come admin in un gruppo.\n\nIn questo modo sarai in grado di leggere le conversazioni da terminale e visualizzare anche i messaggi eliminati. Inoltre, potrai visualizzare il numero ID dell'utente\n\nInserisci API KEY del bot: {Fore.RESET}")
+    return input(f"{Fore.GREEN}Inserisci il token API del tuo bot Telegram e imposta il bot come admin in un gruppo.\n\nIn questo modo sarai in grado di leggere le conversazioni da terminale e visualizzare anche i messaggi eliminati. Inoltre, potrai visualizzare il numero ID dell'utente\n\nCreato da t.me/VikingTerminalInserisci API KEY del bot: {Fore.RESET}")
 
 TELEGRAM_BOT_TOKEN = chiedi_api_key()
 
@@ -20,7 +20,7 @@ def ottieni_ultimo_update_id():
 
 def main():
     print(f"{Fore.GREEN}Inizializzazione del bot...{Fore.RESET}")
-    ultimo_update_id = ottieni_ultimo_update_id()  # Ottieni l'ultimo ID
+    ultimo_update_id = ottieni_ultimo_update_id()  
     offset = ultimo_update_id + 1 if ultimo_update_id is not None else None
 
     while True:
