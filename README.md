@@ -8,4 +8,4 @@ cd Tgbotreadergroup
 
 chmod +x Tgreader.py
 
-puthon Tgreader.py
+python Tgreader.py
